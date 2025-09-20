@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <title>Laravel</title>
 
         <link rel="icon" href="/favicon.ico" sizes="any">
@@ -25,7 +25,10 @@
         <flux:header>
            @livewire('header')
         </flux:header>
-         
+         <main class="p-6">
+             <x-background.banner/>
+             <x-movielayout/>
+         </main>
          @livewireScripts
         @fluxScripts
         @if (Route::has('login'))

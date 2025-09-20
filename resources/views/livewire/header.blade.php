@@ -1,4 +1,4 @@
-<section class="flex justify-between items-center w-full">
+<section class="flex justify-between items-center w-full border border-[#1A1919] bg-fixed">
     <flux:navbar wrapper-class="justify-between">
         <flux:navbar.item href="#">
             <img src="{{ asset('banner.png') }}" alt="" />
@@ -28,7 +28,7 @@
             @endif
             @endauth
             </nav>
-        @endif 
+        @endif
     </div>
 
 </section>
