@@ -9,4 +9,13 @@ class Movie extends Model
 {
     use ConvertsToHls;
 
+    protected $table = 'movies';
+    protected $primaryKey = 'id';
+    protected $rules = [
+        'name' => 'required'
+    ];
+    protected $fillable = [
+        'name'
+    ];
+
 }

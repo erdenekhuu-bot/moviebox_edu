@@ -158,7 +158,7 @@ return [
      * Default: []
      */
     'model_aliases' => [
-        //        'video' => \App\Models\Video::class,
+                'video' => \App\Models\Video::class,
     ],
 
     /**
