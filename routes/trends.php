@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Trends;
 
-Route::get('/trends', function(){
-    return "Trends move";
-});
+Route::get('/trends', Trends::class);
