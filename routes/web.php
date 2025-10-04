@@ -22,7 +22,6 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
-require __DIR__.'/admin.php';
 require __DIR__.'/trends.php';
 require __DIR__.'/movies.php';
 require __DIR__.'/series.php';
