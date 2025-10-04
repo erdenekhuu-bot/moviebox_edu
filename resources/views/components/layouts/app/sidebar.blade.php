@@ -13,9 +13,9 @@
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Platform')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
-                    <flux:navlist.item icon="puzzle-piece">Movie category</flux:navlist.item>
-                    <flux:navlist.item icon="currency-dollar">Menu 1</flux:navlist.item>
-                    <flux:navlist.item icon="document">Menu 2</flux:navlist.item>
+                    <flux:navlist.item icon="puzzle-piece" :href="route('category')" :current="request()->routeIs('category')" :navigate.hover>{{ __('Movie category')}}</flux:navlist.item>
+                    <flux:navlist.item icon="currency-dollar" wire:navigate.hover>Menu 1</flux:navlist.item>
+                    <flux:navlist.item icon="document" wire:navigate.hover>Menu 2</flux:navlist.item>
                 </flux:navlist.group>
                 <flux:navlist.group :heading="__('Movie Category')" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
