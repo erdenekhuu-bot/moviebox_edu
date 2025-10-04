@@ -6,7 +6,6 @@ use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
 use Illuminate\Support\Facades\Route;
-use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
     return view('welcome');
@@ -14,7 +13,7 @@ Route::get('/', function () {
 
 Route::middleware(['auth','verified'])->prefix('dashboard')->group(function () {
     Route::view('','dashboard')->name('dashboard');
-    Route::get('category',[MovieCategoryController::class,'index'])->name('category');
+    Route::view('category','components.Movies.category')->name('category');
 });
 
 Route::middleware(['auth'])->group(function () {
