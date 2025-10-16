@@ -29,7 +29,19 @@ return [
     */
 
     'disks' => [
+        'videos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/videos'),
+        ],
+        'hls-outputs' => [
+            'driver' => 'local',
+            'root' => storage_path('app/hls-outputs'),
+        ],
 
+        'secure' => [
+            'driver' => 'local',
+            'root' => storage_path('app/secure'),
+        ],
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),

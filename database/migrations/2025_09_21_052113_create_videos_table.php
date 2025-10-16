@@ -13,15 +13,11 @@ return new class extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
-            $table->string('original_video');
-            $table->string('hls_output');
-            $table->string('conversion_percent');
-            $table->string('videos');
-            $table->string('hls-outputs');
-            $table->string('secure');
-            $table->string('streamed/hls');
-            $table->string('streamed/secrets');
-            $table->string('tmp');
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->string('original_video')->nullable();
+            $table->string('hls_output')->nullable();
+            $table->integer('conversion_percent')->default(0);
             $table->timestamps();
         });
     }

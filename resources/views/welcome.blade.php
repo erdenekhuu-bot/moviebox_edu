@@ -28,6 +28,7 @@
          <main class="p-6">
              <x-background.banner/>
              <x-movielayout/>
+             <x-trends.page/>
          </main>
          @livewireScripts
         @fluxScripts
